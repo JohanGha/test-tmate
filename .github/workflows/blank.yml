@@ -1,0 +1,11 @@
+name: ترمینال زنده
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: باز کردن ترمینال
+      uses: mxschmitt/action-tmate@v3
